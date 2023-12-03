@@ -1,0 +1,21 @@
+.cart-widget{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .cart-widget-cant{
+        text-align: center ;
+        background-color: $color-secundario;
+        position: relative;
+        right: 5px;
+        top: 5px;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        & p{
+            font-weight: bold;
+            color: black;
+        }
+        
+    }
+
+}

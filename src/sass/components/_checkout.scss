@@ -1,0 +1,41 @@
+.checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $color-secundario;
+
+    & form{
+        display: flex;
+        text-align: center  ;
+        gap: 15px  ;
+        flex-direction: column;
+        background-color: $color-primario;
+        padding: 25px;
+        margin: 30px;
+        border-radius: 25px;
+
+        & h3{
+            text-decoration: underline;
+        }
+
+        & .input-div{
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            font-weight: bold;
+        }
+
+        & button{
+            background-color: $color-secundario;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 25px;
+            &:hover{
+                background-color: $color-terciario;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

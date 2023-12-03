@@ -1,0 +1,114 @@
+@mixin flex-content($flex-direction){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: center;
+    align-items: center;
+}
+$color-primario: #a2c8cc;
+$color-secundario:#c5e0dc;
+$color-terciario: #f8edeb;
+$color-font:black;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'PT Sans', sans-serif;
+}
+html{
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+}
+
+header {
+    background-color:$color-primario;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding:  20px 20px 0px 20px;
+
+}
+main {
+    background-color: $color-secundario;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    padding: 20px 50px 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer{
+    @include flex-content(column);
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    background-color: $color-primario;
+  
+
+    & .redes-link{
+        @include flex-content(column);
+        width: 100%;
+
+
+        & ul{
+            @include flex-content(row);
+            width: 70% ;
+            list-style: none;
+            padding: 10px;
+
+            & li{
+                @include flex-content(row);
+                background-color: $color-secundario;
+                border-radius: 5px ;
+                padding:  5px 7px;
+                margin: 10px;
+                width: 100%;
+                &:hover{
+                    transition: 0.7s;
+                    background-color: $color-terciario;
+                    cursor: pointer;
+                }
+                & a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: $color-font ;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    & .derechos{
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        width: 100%;
+
+        & h4{
+            font-weight: lighter;
+            font-size: 0.6rem;
+            color: $color-font;
+            text-decoration: underline;
+        }
+    }
+}
+@media (min-width:768px){
+    header{
+        padding: 20px 5% 20px 5%;
+    }
+    main{
+        padding: 20px 50px 20px 50px;
+    }
+}
+@media (min-width:1200px){
+    main{
+        padding: 20px 15% 20px 15%;
+    }
+    header{
+        padding: 20px 15% 20px 15%;
+    }
+}

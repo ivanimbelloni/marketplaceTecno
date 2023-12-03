@@ -1,0 +1,11 @@
+@import "./_base.scss";
+
+//components
+@import "./views/home.scss";
+@import "./views/productDetail.scss";
+@import "./views/cart.scss";
+@import "./components/checkout.scss";
+
+@import "./components/cart-widget.scss";
+@import "./components/navbar.scss";
+@import "./components/loading.scss";

@@ -1,0 +1,58 @@
+ [
+  {
+    "id": 1,
+    "name": "Iphone 14 Pro Max",
+    "category":"iphone",
+    "detail": "La nueva version del iphone te va a permitir sacar mejores fotos",
+    "price": 1500,
+    "imgUrl": "https://d2ihpvt6nd5q28.cloudfront.net/wp-content/uploads/2023/02/iPhone_14_Pro_Max_Silver_PDP_Image_Position-8_MXLA.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Ipad Pro 11'",
+    "category":"ipad",
+    "detail": "El ipad pro ofrece mejores formas de mostrar tu creatividad",
+    "price": 1300,
+    "imgUrl": "https://d2ihpvt6nd5q28.cloudfront.net/wp-content/uploads/2021/10/iPad_Pro_Cellular_11_in_Space_Gray_PDP_Image_Position-1b__en-US.jpg"
+  },
+  {
+    "id": 3,
+    "name": " Ipad Mini",
+    "category":"ipad",
+    "detail": "Esta version mas portable del ipad, te permitira llevarlo a donde quieras ",
+    "price": 700,
+    "imgUrl": "https://d2ihpvt6nd5q28.cloudfront.net/wp-content/uploads/2022/07/iPad_mini_Cellular_Purple_PDP_Image_Position-1a_LTE__COES_v1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Iphone 14",
+    "category":"iphone",
+    "detail": "El hermano chico del pro, ofrece un rendimiento parecido pro un menor precio",
+    "price": 800,
+    "imgUrl": "https://d2ihpvt6nd5q28.cloudfront.net/wp-content/uploads/2023/02/iPhone_14_Blue_PDP_Image_Position-5_LAES.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Iphone SE",
+    "category":"iphone",
+    "detail": "La version mas accesible del iphone, te permitira realizar todo lo que necesites ",
+    "price": 400,
+    "imgUrl": "https://d2ihpvt6nd5q28.cloudfront.net/wp-content/uploads/2022/06/iphone-se-family-select-202203.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "MacBook Pro",
+    "category":"macbook",
+    "detail": "Con su chip M2 Pro, este portatil te va a permitir hacer todo lso trabajos mas dificiles como pueden ser edicion de video o imagenes",
+    "price": 2200,
+    "imgUrl": "https://d2ihpvt6nd5q28.cloudfront.net/wp-content/uploads/2023/05/macbook_pro_m2MAX_14y16.jpg"
+  },
+  {
+    "id": 7,
+    "name": "MacBook Air",
+    "category":"macbook",
+    "detail": "Esta MacBook es la version mas liviana, si bien no cuenta con el procesador mas potente es efectiva para muchas tareas cotidianas ",
+    "price": 1300,
+    "imgUrl": "https://d2ihpvt6nd5q28.cloudfront.net/wp-content/uploads/2023/01/macbook-air-midnight-gallery1-20220606.jpeg"
+  }
+]
