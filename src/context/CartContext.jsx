@@ -6,7 +6,7 @@ const saveCart = JSON.parse(localStorage.getItem("cart"))
 export const CartProvider = ({children}) => {
 
     
-    const [cart, setCart] = useState(saveCart)
+    const [cart, setCart] = useState(saveCart || [])
     const addToCart = (prod, cant) => {
         const addProd = {...prod, cant}
 
