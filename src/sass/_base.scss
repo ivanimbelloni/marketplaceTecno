@@ -39,8 +39,8 @@ main {
     min-height: 500px;
     padding: 20px 50px 20px 50px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 footer{
     @include flex-content(column);
@@ -97,9 +97,7 @@ footer{
     }
 }
 @media (min-width:768px){
-    header{
-        padding: 20px 5% 20px 5%;
-    }
+
     main{
         padding: 20px 50px 20px 50px;
     }
@@ -108,7 +106,5 @@ footer{
     main{
         padding: 20px 15% 20px 15%;
     }
-    header{
-        padding: 20px 15% 20px 15%;
-    }
+
 }

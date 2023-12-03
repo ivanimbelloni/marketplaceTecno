@@ -1,15 +1,29 @@
+
 .navbar {
-    max-width: 900px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 7rem;
+    width: 100%;
+    max-width: 720px;
+    text-align: center;
 
-    & ul{
+    &-logo{
+        width: 25%;
+    }
+    &-category{
+        width: 50%;
         display: flex;
-        list-style: none;
-        gap: 2px;
+        align-items: center;
+        justify-content: space-between;
+        & ul{
+            display: flex;
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            gap: 2px;
 
-        & li{
+            & li{
             display: flex;
             justify-content: center;
             text-align: center;
@@ -17,7 +31,7 @@
             background-color: $color-secundario;
             text-decoration: none;
             width: 100px;
-
+            
             &:hover{
                 background-color: $color-terciario;
                 & span{
@@ -30,8 +44,16 @@
                 color: grey;
 
             }
-
-
+            
+            
         }
+    }
+    }
+    &-right{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
 }
