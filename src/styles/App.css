@@ -146,7 +146,7 @@ footer .derechos h4 {
 
 @media (min-width: 880px) {
   .block-card {
-    justify-content: space-between;
+    justify-content: start;
   }
 }
 .item-container {
