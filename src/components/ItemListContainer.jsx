@@ -28,8 +28,8 @@ export const ItemListContainer = () => {
     }, [category])
 
   return (
-    <div>
+    <>
         {!loading ? <ItemList products={products}/> : <LoadingPant/>} 
-    </div>
+    </>
   )
 }

@@ -31,12 +31,14 @@ function NavBar() {
         </div>
           <div className="navbar">
             <NavBarCategories />
+            <div className="contacto">
               <Link to={"/contacto"}>
                 <img
                   src={ContactoIcon}
                   alt="Contacto"
                 />
               </Link>
+            </div>
           </div>
             <CardWidget />
         </div>

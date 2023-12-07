@@ -1,40 +1,51 @@
+
     .block-card{
-        width: auto;
+        width: 100%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: auto;
+        margin: auto ;
+        padding: 15px 5%;
+        gap: 20px;
         & .card{
             display: flex;
             flex-direction: column;
-            border-radius: 15px;
+            align-items: center;
+            justify-content: space-between;
             min-height: 451px;
             padding: 20px;
-            gap: 20px   ;
-            background-color: $bg-primary;
+            background-color: $bg-secondary;
             text-align: center  ;
-            margin: 25px;
-            gap: 10px      ;
             & img{
                 border-radius: 25px;
                 width: 300px;
-
                 height: 300px;
+                image-rendering: optimizeQuality;
+                object-fit: cover;
             }
             & .btn{
                 padding: 5px;
                 background-color: $btn-primary;
                 border-radius: 25px;
-                color: gray;
+                color: $font-secondary;
                 text-decoration: none;
 
                 &:hover{
                     text-decoration: solid;
                     background-color: $btn-hover;
-                    color: black;
                 }
+            }
+
+            &:hover{
+                background-color: $bg-primary;
             }
         }
 
 
+    }
+
+    @media (min-width: 880px){
+        .block-card{
+            justify-content: space-between;
+        }
     }
