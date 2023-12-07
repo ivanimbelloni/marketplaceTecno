@@ -11,7 +11,7 @@
             min-height: 451px;
             padding: 20px;
             gap: 20px   ;
-            background-color: $color-primario;
+            background-color: $bg-primary;
             text-align: center  ;
             margin: 25px;
             gap: 10px      ;
@@ -23,14 +23,14 @@
             }
             & .btn{
                 padding: 5px;
-                background-color: $color-secundario;
+                background-color: $btn-primary;
                 border-radius: 25px;
                 color: gray;
                 text-decoration: none;
 
                 &:hover{
                     text-decoration: solid;
-                    background-color: $color-terciario;
+                    background-color: $btn-hover;
                     color: black;
                 }
             }

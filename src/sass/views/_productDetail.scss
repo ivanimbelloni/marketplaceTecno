@@ -1,67 +1,117 @@
-.item{
-    min-width: 600px;
+.item-container{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 20px   ;
-    & img{
-        max-width: 400px;
-        border-radius: 45px;
-    }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    & .item{
+        
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        width: 100%;
+        gap: 20px   ;
+        & .img{
+            display: flex;
+            justify-content: center;
+            & img{
+                max-width: 300px;
+                height: auto;
+            }
+        }
 
     &-info{
         display: flex;
         flex-direction: column;
-        width: calc(100% - 530px);
-        gap: 40px;
-    }
-    &-price{
-        font-size: larger;
-        background-color: $color-terciario;
-        padding: 10px;
-        border-radius: 25px;
-        text-align: center;
-
-    }
-    &-counter{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-        align-items: center;
-        
-        & .btn{
-            background-color: $color-primario;
-            font-weight: 500;
-            border-radius: 25px;
-            width: 70%;
-            padding: 5px;
-    
-            &:hover{
-                background-color: $color-secundario;
-                cursor: pointer;
-            }
+        padding-top: 10px;
+        gap: 20px;
+        & h6{
+            display: none;
         }
-        & .counter{
+
+        & .item-counter{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: $color-primario;
-            font-weight: 500;
-            border-radius: 25px;
-            width: 20%;
-            padding: 5px;
-            gap: 1px    ;
-            & .btn-cant{
-                display: block;
-                background-color: $color-primario;
+            width: 100%;
+            & .counter{
+                display: flex;
+                justify-content: space-between;
+                background-color: $bg-secondary;
+                width: 100%;
                 border-radius: 25px;
-                width: 20px;
+                padding: 0px 15px;
+                & .btn-cant{
+                    padding: 5px;
+                    text-align: center;
+                    font-size:  2rem;
+                    border-radius: 50%;
+                    width: 50px ;
+                    height: 50px;
+                    border-color: $btnOut-primary;
+                    border-width: 2px;
 
+                    &:hover{
+                        cursor: pointer;
+                        background-color: $btnOut-hover;
+                    }
+
+                }
+                & .count-span{
+                    padding: 5px;
+                    font-size: 2rem;
+                }
+            }
+            & .btn-buy{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                background-color: $btn-primary;
+                height: 50px;
+                margin-top: 10px;
+                border-radius: 25px;
                 &:hover{
-                    background-color: $color-secundario;
+                    background-color: $btn-hover;
                     cursor: pointer;
+                    transition: 0.8s;
                 }
             }
         }
     }
+}
+& .detail{
+    width: 100%;
+    & span{
+        font-size: larger;
+        text-decoration: underline;
+        font-weight: bolder;
+    }
+}
+}
+@media (min-width: 880px) {
+   .item-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+
+    .item{
+        flex-direction: row;
+        &-info{
+            width: 100%;
+        }
+
+        & .item-counter{
+            flex-direction: row;
+            gap: 5px    ;
+
+            & .btn-buy{
+                margin: 0px;
+            }
+        }
+    }
+   }
+
 }

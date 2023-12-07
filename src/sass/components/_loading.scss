@@ -4,10 +4,11 @@
   align-items: center;
     height: 100%;
     min-height: 500px;
+    z-index: 1;
 
   & .loader {
-    border: 16px solid $color-terciario; 
-    border-top: 16px solid $color-primario; 
+    border: 16px solid $bg-secondary; 
+    border-top: 16px solid $bg-primary; 
     border-radius: 50%;
     width: 120px;
     height: 120px;

@@ -4,50 +4,75 @@
     justify-content: center;
     align-items: center;
 }
-$color-primario: #a2c8cc;
-$color-secundario:#c5e0dc;
-$color-terciario: #f8edeb;
-$color-font:black;
+@mixin icon(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+
+}
+@mixin container(){
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+//pallete colors
+$bg-general: #f5f9fa;
+$bg-primary: #a2c8cc;
+$bg-secondary:#c5e0dc;
+//btn
+$btn-primary: #5a979d;
+$btn-hover:#467c83;
+$btnOut-primary: #3a646a;
+$btnOut-hover: #d1e4e6;
+//font
+$font-primary:#335559;
+$font-secondary:#d1e4e6;
+//_______________________________________________________________________
+
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 *{
     box-sizing: border-box;
     margin: 0px;
+    padding: 0px;
     font-family: 'PT Sans', sans-serif;
 }
-html{
-    height: 100%;
-}
-body {
+
+a{
+    text-decoration: none;
+}body {
     display: flex;
     flex-direction: column;
     min-width: 320px;
+    width: 100%;
+    height: auto;
 }
 
 header {
-    background-color:$color-primario;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding:  20px 20px 0px 20px;
-
+    background-color:$bg-primary;
+    position: sticky;
+    top: 0px;
+    
 }
 main {
-    background-color: $color-secundario;
+    background-color: $bg-general;
     width: 100%;
     height: 100%;
     min-height: 500px;
-    padding: 20px 50px 20px 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 footer{
     @include flex-content(column);
     height: auto;
     width: 100%;
     padding: 20px;
-    background-color: $color-primario;
+    background-color: $bg-primary;
   
 
     & .redes-link{
@@ -63,21 +88,26 @@ footer{
 
             & li{
                 @include flex-content(row);
-                background-color: $color-secundario;
+                background-color: $btn-primary;
                 border-radius: 5px ;
                 padding:  5px 7px;
                 margin: 10px;
                 width: 100%;
-                &:hover{
-                    transition: 0.7s;
-                    background-color: $color-terciario;
-                    cursor: pointer;
-                }
                 & a{
+                    color: $font-primary;
                     text-decoration: none;
                     font-weight: bold;
-                    color: $color-font ;
                     font-size: 1rem;
+                }
+            
+            &:hover{
+                transition: 0.7s;
+                background-color: $btn-hover;
+                cursor: pointer;
+                
+                & a{
+                    color: $font-secondary;
+                    }
                 }
             }
         }
@@ -90,21 +120,18 @@ footer{
 
         & h4{
             font-weight: lighter;
-            font-size: 0.6rem;
-            color: $color-font;
+            font-size: 0.8rem;
+            color: $font-primary;
             text-decoration: underline;
         }
     }
 }
-@media (min-width:768px){
-
-    main{
-        padding: 20px 50px 20px 50px;
-    }
-}
-@media (min-width:1200px){
-    main{
-        padding: 20px 15% 20px 15%;
+@media (min-width:880px){
+    header {
+        padding:  20px 20%;
+    
     }
 
+
 }
+

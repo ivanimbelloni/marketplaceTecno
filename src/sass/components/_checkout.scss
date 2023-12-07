@@ -3,14 +3,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: $color-secundario;
+    background-color: $bg-secondary;
 
     & form{
         display: flex;
         text-align: center  ;
         gap: 15px  ;
         flex-direction: column;
-        background-color: $color-primario;
+        background-color: $bg-primary;
         padding: 25px;
         margin: 30px;
         border-radius: 25px;
@@ -27,12 +27,12 @@
         }
 
         & button{
-            background-color: $color-secundario;
+            background-color: $btn-primary;
             font-size: 1.3rem;
             font-weight: bold;
             border-radius: 25px;
             &:hover{
-                background-color: $color-terciario;
+                background-color: $btn-hover;
                 cursor: pointer;
             }
         }

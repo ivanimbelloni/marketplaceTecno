@@ -1,11 +1,11 @@
 @import "./_base.scss";
 
 //components
-@import "./views/home.scss";
-@import "./views/productDetail.scss";
-@import "./views/cart.scss";
-@import "./components/checkout.scss";
+@import "./views/_home.scss";
+@import "./views/_productDetail.scss";
+@import "./views/_cart.scss";
+@import "./components/_checkout.scss";
 
-@import "./components/cart-widget.scss";
-@import "./components/navbar.scss";
-@import "./components/loading.scss";
+@import "./components/_cart-widget.scss";
+@import "./components/_navbar.scss";
+@import "./components/_loading.scss";

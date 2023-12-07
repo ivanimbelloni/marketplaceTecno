@@ -1,64 +1,153 @@
 .cart{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    padding: 25px;
+    padding: 25px 0px;
+    width: 100%;
+    gap: 10px   ;
     &-content{
-        border-radius: 25px;
         display: flex;
-        justify-content: center  ;
-        align-items: center;
-        gap: 20px   ;
-        flex-wrap: wrap;    
-        
+        flex-flow: column;
+        width: 100%;
+
     }
     &-prod{
-        background-color: $color-primario;
-        padding: 5px;
         display: flex;
-        gap: 10px;
-        width: 100%;
-        align-items: center;
-        justify-content: start;    
-        
+        background-color: $bg-secondary;
+        margin: 10px;
+        padding: 5px;
         & .prod-img{
             width: 100px;
-            height: 100px;
         }
-    }
-    & .btn{
+
+       & .prod-info{
         display: flex;
-        padding: 25px;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-        &-delete{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 25px;
-            background-color: $color-primario   ;
-            padding: 10px;
+        flex-direction: column;
+        padding-left: 5px;
+        gap: 5px;
 
-                &:hover{
-                    background-color: red;
-                    transition: all 1s;
-                    cursor: pointer;
-                }
+        & p{
+            font-size: 0.8rem;
         }
+
+        & span{
+            font-size: 1rem;
+            font-weight: bolder;
+        }
+       }
     }
 
-    & .btn-checkout{
-        color: black;
-        padding: 15px   ;
-        border-radius: 25px ;
-        font-weight: bold ;
-        background-color: $color-primario;
+    &-low{
+        height: 100%;
+        justify-content: end;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        background-color: $bg-general;
 
-        &:hover{
-            background-color: $color-terciario;
-            transition: all 1s;
+        & .btn-delete{
+            display: flex;
+            justify-content: end;
+            padding: 2px 5px;
+            border-radius: 25px;
+            &:hover{
+                background-color: #bd0003;
+                transition: 1s;
+            }
+        }
+
+        & a{
+            width: 100%;
+            & .btn-checkout{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $btn-primary;
+                padding: 5px;
+                margin: 10px;
+                color: $font-secondary;
+                
+            }
+            &:hover{
+                & .btn-checkout{
+                    transition: 0.8s;
+                    background-color: $btn-hover;
+                }
+            }
+        }
+    }
+        
+    
+    
+}
+@media (min-width: 880px) {
+    .cart{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        &-info{
+            border-radius: 25px;
+            display: flex;
+            justify-content: center  ;
+            align-items: center;
+            gap: 20px   ;
+            flex-wrap: wrap;    
+            
+        }
+        &-prod{
+            background-color: $bg-primary;
+            padding: 5px;
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            align-items: center;
+            justify-content: start;    
+            
+            & .prod-img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    
+    
+        & .btn{
+            display: flex;
+            padding: 25px;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            &-delete{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 25px;
+                background-color: $btn-primary   ;
+                padding: 10px;
+    
+                    &:hover{
+                        background-color: red;
+                        transition: all 1s;
+                        cursor: pointer;
+                    }
+            }
+        }
+    
+        & .btn-checkout{
+            color: black;
+            padding: 15px   ;
+            border-radius: 25px ;
+            font-weight: bold ;
+            background-color: $btn-primary;
+    
+            &:hover{
+                background-color: $btn-hover;
+                transition: all 1s;
+            }
         }
     }
 }

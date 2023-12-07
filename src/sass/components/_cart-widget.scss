@@ -4,7 +4,7 @@
     align-items: center;
     & .cart-widget-cant{
         text-align: center ;
-        background-color: $color-secundario;
+        background-color: $bg-secondary;
         position: relative;
         right: 5px;
         top: 5px;
@@ -13,9 +13,17 @@
         height: 20px;
         & p{
             font-weight: bold;
-            color: black;
+            color: $font-primary;
         }
         
     }
+    & img{
+        padding: 5px;
+        border-radius: 50%;
+        &:hover{
+            background-color: $bg-secondary;
+        }
+    }
+   
 
 }
